@@ -38,11 +38,6 @@ conn.commit()
 print("inserted successfully")
 
 #Q3
-conn.execute("INSERT INTO BOOKS(BOOK_ID,TITLE_ID,LOCATION,GENRE) VALUES(11023,25893,'DELHI','SCIENCE')")
-conn.commit()
-print("inserted successfully")
-
-#Q3
 print("Before Updation")
 cusor=conn.execute("SELECT book_id,title_id,location,genre from books")
 for row in cusor:
